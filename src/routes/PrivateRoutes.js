@@ -4,7 +4,7 @@ import { Outlet, Navigate } from "react-router-dom";
 
 export default class PrivateRoute extends Component {
   render() {
-    let isLoggedIn = reactLocalStorage.get("authToken");
+    let isLoggedIn = reactLocalStorage.get("authToken");    
     if (isLoggedIn) {
       return <Outlet />;
     }

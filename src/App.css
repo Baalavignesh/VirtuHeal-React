@@ -1,6 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 * {
-    margin: 0px;
-    padding: 0px;
+  font-family: "PT Sans", sans-serif;
+
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #f6f1f1;
 }
 
 /* font-family: 'Inter', sans-serif;
@@ -8,7 +18,34 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Nunito Sans', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
 h1 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 21px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
 }
