@@ -1,2 +1,2 @@
-const RootApi = "https://localhost:7136/api";
+const RootApi = "https://virtuhealappservice.azurewebsites.net/api";
 export default RootApi;

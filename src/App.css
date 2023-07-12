@@ -49,3 +49,12 @@ h5 {
 p {
   font-size: 16px;
 }
+
+
+.chatgradient {
+  background-image: linear-gradient(to right bottom, #146C94, #146C94, #146b94d6, #146b94d3, #146b948d);
+}
+
+.textgradiant {
+  background-image: linear-gradient(to right bottom, #267fc8, #267fc8, #126fb9);
+}

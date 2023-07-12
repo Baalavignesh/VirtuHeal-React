@@ -5,7 +5,7 @@ import { CreateAppointment } from "../api_calls/AppointmentApi";
 // Update the import path
 
 function CreateAppointmnet() {
-  let [senderId, setSenderId] = useState(1);
+  let [senderId, setSenderId] = useState("");
 
   let navigate = useNavigate();
   let location = useLocation();
@@ -13,6 +13,8 @@ function CreateAppointmnet() {
   useEffect(() => {
     let data = location.state?.to;
     console.log(data);
+
+    setSenderId(data);
 
     // if(data === undefined) {
     //   navigate("/app");
@@ -48,7 +50,7 @@ function CreateAppointmnet() {
         ...appointmentEntries,
         studentId: senderId,
         psychiatristId: userInfo.myId,
-        initiatedBy: userInfo.myId,
+        initiatedBy: (userInfo.myId).toString(),
         status: "pending",
       };
     }

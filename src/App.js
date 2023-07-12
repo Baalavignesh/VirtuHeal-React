@@ -12,6 +12,7 @@ import RegisterPsyphiatristPage from "./pages/register_psychiatrist";
 import LoginPage from "./pages/login_page";
 import WelcomePage from "./pages/welcome_page";
 import ViewStudentProfile from "./pages/student_profile";
+import ChatPage from "./pages/chat_page";
 
 function App() {
   return (
@@ -22,7 +23,9 @@ function App() {
         </Route>
         <Route path="/view-appointment" element={<ViewAppointment />}>
         </Route>
-        <Route
+        <Route path="/chat" element={<ChatPage />}></Route>
+
+        {/* <Route
           path="/viewstudentprofile"
           element={<ViewStudentProfile />}
           loader={({ params }) => {
@@ -32,7 +35,7 @@ function App() {
             return params.studentId; 
           }}
         >
-        </Route>
+        </Route> */}
       </Route>
       <Route
         path="/signup"

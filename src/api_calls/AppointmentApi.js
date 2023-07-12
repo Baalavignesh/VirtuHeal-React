@@ -23,5 +23,15 @@ async function GetMyAppointment(userId, role) {
     return response;
   }
 
+  async function UpdateAppointmnt(appointmentInfo) {
+    const response = await fetch(RootApi + `/Appointment/UpdateAppointment?appointment_id=${appointmentInfo.appointment_id}&new_status=${appointmentInfo.new_status}`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(appointmentInfo),
+    });
+    return response;
+  }
 
-  export {GetMyAppointment, CreateAppointment};
+  export {GetMyAppointment, CreateAppointment, UpdateAppointmnt};
